@@ -1,0 +1,55 @@
+body {
+    background-color:black;
+    color:white;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*background-image: url("HP Great Hall.png");*/
+    /*background-size: cover;*/
+    font-family:"Times New Roman"
+}
+
+
+
+p{
+    font-size: 20px;
+}
+
+form{
+    font-size: 18px;
+}
+
+input{
+    margin-top:10px;
+    margin-right: 8px;
+}
+
+.Gryffindor{
+    color:#CA1251;
+}
+
+.Ravenclaw{
+    color:#4991CC;
+}
+
+.Hufflepuff{
+    color:#FBD048;
+}
+
+.Slytherin{
+    color:#026352;
+}
+
+#submitButton{
+    font-size:18px;
+    font-family:"Times New Roman"
+}
+
+#resultsDiv{
+    overflow:auto;
+    text-align:center;
+}
+
+#wrapper{
+    display:flex;
+    justify-content:center;
+}

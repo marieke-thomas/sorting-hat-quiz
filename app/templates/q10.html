@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/result">
+    <p>Which house do you want to be in?</p>
+    <input type="radio" name="question" value="G">Gryffindor<br>
+    <input type="radio" name="question" value="R">Ravenclaw<br>
+    <input type="radio" name="question" value="H">Hufflepuff<br>
+    <input type="radio" name="question" value="S">Slytherin<br>
+    <input type="submit" id="submitButton">
+</form>
+{% endblock %}

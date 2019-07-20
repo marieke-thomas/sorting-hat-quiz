@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q8">
+    <p>Which Mark Twain quote speaks to you the most?</p>
+    <input type="radio" name="question" value="G">The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.<br>
+    <input type="radio" name="question" value="R">Get your facts first, then you can distort them as you please<br>
+    <input type="radio" name="question" value="S">Principles have no real force except when one is well-fed<br>
+    <input type="radio" name="question" value="H">There are basically two types of people. People who accomplish things, and people who claim to have accomplished things. The first group is less crowded.<br>
+    <input type="submit" id="submitButton">
+</form>
+{% endblock %}

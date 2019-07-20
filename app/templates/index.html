@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q2">
+    <p>You recently started a new job, and your boss keeps being unsatisfied with your work. What do you do?</p>
+    <input type="radio" name="question" value="H" class="choice">Make sure to come in early, stay late, and go over everything three times before you submit it to your boss<br>
+    <input type="radio" name="question" value="S">Ask for help from a coworker who your boss loves<br>
+    <input type="radio" name="question" value="G">Call a meeting with your boss and explain that you feel unsupported<br>
+    <input type="radio" name="question" value="R">Explain to your boss why your method is superior<br>
+    <input type="submit" id="submitButton">
+    <!--<button type="button" name = "G1">Click Me now!</button>        -->
+</form>
+{% endblock %}

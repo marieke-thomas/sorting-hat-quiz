@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q9">
+    <p>Which clique did you belong to in high school?</p>
+    <input type="radio" name="question" value="G">Jocks<br>
+    <input type="radio" name="question" value="R">Nerds<br>
+    <input type="radio" name="question" value="H">Dorks<br>
+    <input type="radio" name="question" value="S">Goths<br>
+    <input type="submit" id="submitButton">
+</form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q3">
+    <p>Which sounds like an ideal date?</p>
+    <input type="radio" name="question" value="R">Strolling through a museum together<br>
+    <input type="radio" name="question" value="H">A home-cooked meal, then cuddling together while watching movies<br>
+    <input type="radio" name="question" value="S">Going to a comedy club and heckling the performers together<br>
+    <input type="radio" name="question" value="G">Bungee jumping while holding hands<br>
+    <input type="submit"  id="submitButton">
+</form>
+{% endblock %}

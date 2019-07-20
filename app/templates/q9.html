@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q10">
+    <p>How evil are you?</p>
+    <input type="radio" name="question" value="G">I’m not evil<br>
+    <input type="radio" name="question" value="S">An average amount evil<br>
+    <input type="radio" name="question" value="R">What metric are we using to measure evil? <br>
+    <input type="radio" name="question" value="H">I’m the evilest!<br>
+    <input type="submit" id="submitButton">
+</form>
+{% endblock %}

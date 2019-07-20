@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q7">
+    <p>Which problem is most likely to land you in the hospital wing?</p>
+    <input type="radio" name="question" value="R">Fell off one of the moving staircases because I was reading while walking<br>
+    <input type="radio" name="question" value="G">Broomstick accident while trying to pull off the <i>Wronski Feint</i><br>
+    <input type="radio" name="question" value="H">Got bitten by a blask-ended skrewt while trying to teach it to fetch<br>
+    <input type="radio" name="question" value="S">My crush was in the hospital wing with dragon pox, so I took a skiving snackbox so I could hang out with them<br>
+    <input type="submit" id="submitButton">
+</form>
+{% endblock %}

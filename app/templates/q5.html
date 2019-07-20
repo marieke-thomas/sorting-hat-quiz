@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q6">
+    <p>In Charms class, Professor Flitwick is teaching you how to levitate feathers. What question are you burning to ask him?</p>
+    <input type="radio" name="question" value="S">Can I use this to move objects around, or does it only lift them?<br>
+    <input type="radio" name="question" value="H">How can I use this spell to help people?<br>
+    <input type="radio" name="question" value="R">Is the <i>wingardium leviosa</i> spell producing an upwards force to counter gravity, temporarily negating the gravitational force, or warping space-time such that the feather falls upwards?<br>
+    <input type="radio" name="question" value="G">What happens if I cast this spell on myself?<br>
+    <input type="submit" id="submitButton">
+</form>
+{% endblock %}

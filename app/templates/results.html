@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="wrapper">
+<div id="resultsDiv">
+    <p>Congratulations, you have been sorted into:</p>
+    <h1 class="{{house}}">{{house}}!</h1>
+    <img src ="static/{{crest}}" height=500px>
+</div>
+</div>
+{% endblock %}

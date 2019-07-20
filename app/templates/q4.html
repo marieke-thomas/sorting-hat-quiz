@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q5">
+    <p>On your eleventh birthday, you find out that magic is real and you’re a witch/wizard. What’s the first thing you do?</p>
+    <input type="radio" name="question" value="S">Figure out how to use magic to do your chores for you<br>
+    <input type="radio" name="question" value="G">Accidentally splinch yourself trying to apparate<br>
+    <input type="radio" name="question" value="R">Run a series of experiments to try to figure out how magic actually works<br>
+    <input type="radio" name="question" value="H">Design your own mini-fireworks show to impress your family<br>
+    <input type="submit" id="submitButton">
+</form>
+{% endblock %}

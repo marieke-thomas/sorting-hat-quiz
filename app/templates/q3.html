@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/Q4">
+    <p>Which pet would you prefer?</p>
+    <input type="radio" name="question" value="R">Cat<br>
+    <input type="radio" name="question" value="HG">Dog<br>
+    <input type="radio" name="question" value="S">Pets are a lot of work. Instead of getting a pet, I’ll convince my roommate to get one, so I get all the cuddles with no poop-scooping.<br>
+    <input type="submit"  id="submitButton">
+</form>
+{% endblock %}
