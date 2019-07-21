@@ -18,6 +18,7 @@ def add_points(question_response):
     global ravenscore
     global hufflescore
     global slytherscore
+    print(question_response["question"])
     if question_response["question"] == "G":
         gryffinscore += 1
     elif question_response["question"] == "HG":
@@ -33,7 +34,7 @@ def add_points(question_response):
     print_score()
     return
 
-def sort(question_response):
+def sort_user(question_response):
     house_result = ["nothing"]
     max_score = 0
     houses = {"Gryffindor":gryffinscore,"Hufflepuff":hufflescore,"Ravenclaw":ravenscore,"Slytherin":slytherscore}
@@ -55,6 +56,8 @@ def sort(question_response):
             return "Hufflepuff"
         elif question_response["question"] == "S":
             return "Slytherin"
+    else:
+        return ("Muggle")
 
 def pick_crest(house):
     if house == "Gryffindor":
@@ -71,7 +74,7 @@ def print_score():
     global ravenscore
     global hufflescore
     global slytherscore
-    print("G: " + gryffinscore)
-    print("R: " + ravenscore)
-    print("H: " + hufflescore)
-    print("S: " + slytherscore)    
+    print("G: " + str(gryffinscore))
+    print("R: " + str(ravenscore))
+    print("H: " + str(hufflescore))
+    print("S: " + str(slytherscore))    
