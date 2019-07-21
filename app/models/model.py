@@ -18,11 +18,14 @@ def add_points(question_response):
     global ravenscore
     global hufflescore
     global slytherscore
-    if question_response["question"] == "G" or question_response["question"] == "HG":
+    if question_response["question"] == "G":
         gryffinscore += 1
+    elif question_response["question"] == "HG":
+        gryffinscore += 1
+        hufflescore += 1
     elif question_response["question"] == "R":
         ravenscore += 1
-    elif question_response["question"] == "H" or question_response["question"] == "HG":
+    elif question_response["question"] == "H":
         hufflescore += 1
     elif question_response["question"] == "S":
         slytherscore += 1
