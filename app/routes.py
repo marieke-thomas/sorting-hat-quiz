@@ -67,5 +67,6 @@ def result():
     userdata = formopener.dict_from(request.form)
     model.add_points(userdata)
     house = model.sort(userdata)
+    print("You have been sorted into " + house)
     crest = model.pick_crest(house)
     return render_template('results.html',house = house,crest = crest)

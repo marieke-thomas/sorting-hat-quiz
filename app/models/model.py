@@ -30,6 +30,7 @@ def add_points(question_response):
     elif question_response["question"] == "S":
         slytherscore += 1
     # print("The current gryffinscore is " + str(gryffinscore))
+    print_score()
     return
 
 def sort(question_response):
@@ -65,4 +66,12 @@ def pick_crest(house):
     else:
         return "Hufflepuff crest black.jpg"
 
-    
+def print_score():
+    global gryffinscore
+    global ravenscore
+    global hufflescore
+    global slytherscore
+    print("G: " + gryffinscore)
+    print("R: " + ravenscore)
+    print("H: " + hufflescore)
+    print("S: " + slytherscore)    
